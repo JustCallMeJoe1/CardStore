@@ -1,10 +1,8 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='styling.css') }}">
 <div class="navBar">
-    <img src="../resource/storeIcon.png" alt="Store Icon">
+    <img src="../static/storeIcon.png" alt="Store Icon" id="storeLogo">
     <div class="navbarLinks">
         <a href="{{ url_for('index') }}" class="btn btn-light nav-btn fontStyle">Home Page</a>
-        <a href="{{ url_for('getPokemonCards') }}" class="btn btn-light nav-btn fontStyle">Pokemon Cards</a>
-        <a href="{{ url_for('getNFLCards') }}" class="btn btn-light nav-btn fontStyle">NFL Cards</a>
-        <a href="{{ url_for('getUserProfile') }}" class="btn btn-light nav-btn fontStyle">My Profile</a>
+
     </div>
 </div>

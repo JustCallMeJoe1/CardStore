@@ -1,10 +1,7 @@
 #--------------------------------------------------Imports-------------------------------------------------------------#
 
 import os   # Environment variable (IP & Port) for running in venv
-from flask import Flask
-
-
-
+from flask import Flask, render_template, redirect, url_for, request, session
 
 #--------------------------------------------------Setup---------------------------------------------------------------#
 
@@ -15,7 +12,7 @@ app = Flask(__name__)   # Creates the flask application
 @app.route('/')
 @app.route('/index')
 def index():
-    return "bruh"
+    return render_template("index.html")
 
 
 
